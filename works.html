@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>bexthehexx / works</title>
+    <link href="https://fonts.googleapis.com/css?family=Gaegu:700|Source+Code+Pro:500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" href="/images/woman-mage.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="float-top">
+        <nav id="nav" role="navigation">
+            <ul>
+                <li><a id="works-link" class="active">works</a></li>
+                <li><a id="exhibit-link" href="/exhibitions.html">exhibitions</a></li>
+                <li><a id="about-link" href="/about.html">about</a></li>
+                <li id="float-right"><a id="home-link" href="/">bexthehexx</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <div id="tags-nav">
+            <h3>Tags:</h3>
+            <button class="tag" onclick="tagSelected('electronics')">electronics</button>
+            <button class="tag" onclick="tagSelected('game')">games</button>
+            <button class="tag" onclick="tagSelected('film')">films</button>
+            <button class="tag" onclick="tagSelected('mobile')">mobile</button>
+            <button class="tag" onclick="tagSelected('creativecoding')">creative coding</button>
+            <button class="tag" onclick="tagSelected('interactiondesign')">interaction design</button>
+            <button class="tag active" onclick="tagSelected('all')">all</button>
+        </div>
+        <div id="works">
+            <div class="works creativecoding all" id="ctc" onclick="workOpenClose('ctc')">
+                <h3>Cheddar the Cat</h3>
+                <p>Cheddar the Cat is a virtual pet chrome extension.</p>
+            </div>
+            <div class="works electronics interactiondesign all" id="oh" onclick="workOpenClose('oh')">
+                <h3>Octo-hugs</h3>
+                <p>Octo-hugs is a huggable plush toy created for children ages 5-8 with developmental disabilities.</p>
+            </div>
+            <div class="works electronics interactiondesign all" id="pc">
+                <h3>Project Clueless</h3>
+                <p>Project Clueless is a smart closet created during my Google UX Engineering Internship.</p>
+            </div>
+            <div class="works electronics interactiondesign games all" id="jtf">
+                <h3>Judge the Fly</h3>
+                <p>Judge the Fly is an alternative game controller.</p>
+            </div>
+            <div class="works mobile game all" id="tid">
+                <h3>Trauma in Drama</h3>
+                <p>Trauma in Drama is a visual novel with interactive mini games about a high schooler vying for the lead in the school's musical.</p>
+            </div>
+            <div class="works film all" id="tracks">
+                <h3>10 Tracks for Track 10</h3>
+                <p>Music video for Charli XCX's Track 10 from Pop 2.</p>
+            </div>
+            <div class="works creativecoding all">
+                <h3>7</h3>
+            </div>
+            <div class="works game all">
+                <h3>8</h3>
+            </div>
+            <div class="works mobile all">
+                <h3>9</h3>
+            </div>
+            <div class="works interactiondesign all">
+                <h3>10</h3>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-nav">
+
+    </div>
+    <script src="letsgetit.js"></script>
+</body>
+
+</html>

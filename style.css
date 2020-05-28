@@ -1,0 +1,578 @@
+/* color scheme
+main color #6f2b85
+main light color #C47ADA
+main light compliment color #dacf7a
+highlight color #2d95c9
+
+neutrals
+grey #5d5d5d
+black
+white */
+
+
+/*
+*
+top sticky nav bar 
+*
+*/
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6f2b85;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+}
+
+#nav li {
+    float: left;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+
+#nav li a {
+    color: white;
+    padding: 14px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+#nav #float-right {
+    float: right;
+}
+
+#nav li a:hover:not(.active) {
+    background-color: #C47ADA;
+}
+
+#nav .active {
+    background-color: white;
+    color: #6f2b85;
+}
+
+
+/*
+*
+main content for every page
+*
+*/
+
+.main {
+    margin-top: 55px;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+}
+
+p {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+/*
+*
+main content: tags nav
+*
+*/
+
+#tags-nav {
+    margin: 10px;
+    padding: 5px;
+    display: inline-block;
+    background-color: white;
+    /* width: 100%; */
+    /* only use if tags float top */
+    /* top: 50px; */
+    /* only use if tags float top */
+    /* position: fixed; */
+    /* only use if tags float top */
+}
+
+#tags-nav h3 {
+    margin: 0;
+    display: inline-block;
+}
+
+#tags-nav button {
+    background-color: white;
+    border: 2px dashed;
+    color: #6f2b85;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#tags-nav button:hover {
+    background-color: #C47ADA;
+    color: white;
+}
+
+#tags-nav button.active {
+    background-color: #6f2b85;
+    color: white;
+}
+
+
+/*
+*
+main content: works
+*
+*/
+
+
+/* only use if tags float top */
+
+
+/* .main #works { 
+    margin-top: 115px;
+} */
+
+#works {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 6px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.works.hide {
+    display: none;
+}
+
+.works {
+    padding: 25px;
+    width: calc((100vw / 4) - 70px);
+    height: calc((100vw / 4) - 70px);
+    border: 3px dashed #6f2b85;
+    box-shadow: 0 0 0 4px white;
+    animation: fadeIn ease 1.5s;
+    -webkit-animation: fadeIn ease 1.5s;
+    -moz-animation: fadeIn ease 1.5s;
+    -o-animation: fadeIn ease 1.5s;
+    -ms-animation: fadeIn ease 1.5s;
+}
+
+
+/* fade in works */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.works h3 {
+    margin: 0px;
+    color: white;
+    text-shadow: 2px 2px #6f2b85;
+    /* mix-blend-mode: difference; */
+}
+
+.works p {
+    display: none;
+    font-size: 13pt;
+}
+
+#ctc {
+    background-image: url("/images/cheddarthecat-thumb.png");
+}
+
+#oh {
+    background-image: url("/images/octo-thumb.jpg");
+}
+
+#pc {
+    background-image: url("/images/clueless-thumb.jpg");
+}
+
+#jtf {
+    background-image: url("/images/judge-thumb.jpg");
+}
+
+#tid {
+    background-image: url("/images/trauma-thumb.jpg");
+}
+
+#tracks {
+    background-image: url("/images/10tracks-thumb.png");
+}
+
+.works {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.works:hover p {
+    color: white;
+    text-shadow: 2px 2px #6f2b85;
+    display: block;
+}
+
+
+/*
+*
+header text
+*
+*/
+
+h1 {
+    font-family: 'Gaegu', cursive;
+    color: #6f2b85;
+    font-size: 48px;
+}
+
+h2 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+/*
+*
+header title styles
+*
+*/
+
+.row {
+    display: block;
+    clear: both;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.row .left>h1 {
+    background-color: #fff;
+    float: left;
+    padding-right: 4px;
+    font-size: 48px;
+    margin: 0;
+}
+
+.row .right {
+    background-color: #fff;
+    float: right;
+    padding-left: 4px;
+    font-size: 48px;
+}
+
+.dotted {
+    height: 48px;
+    font-size: 48px;
+    border-bottom: 4px dotted #6f2b85;
+}
+
+
+/*
+*
+works format grid
+*
+*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 25px;
+    padding: 10px;
+}
+
+.grid-container>img {
+    width: 20vw;
+}
+
+.grid-container>img:after {
+    width: 20vw;
+    display: block;
+    padding-bottom: 60%;
+}
+
+img {
+    max-width: 20vw;
+}
+
+.grid-container>div>h3 {
+    margin: 2px;
+    text-align: center;
+}
+
+.grid-container img {
+    cursor: pointer;
+}
+
+.grid-container h3 {
+    cursor: pointer;
+}
+
+
+/*
+*
+overlays
+*
+*/
+
+.overlayBG {
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.overlay {
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    height: 85vh;
+    margin-top: 10vh;
+}
+
+.overlay button {
+    background-color: black;
+    color: white;
+    float: right;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
+/*
+*
+bottom footer
+*
+*/
+
+#float-bottom {}
+
+
+/*
+*
+desktop - detect change in screen sizes
+*
+*/
+
+@media (max-width: 1100px) {
+    #works {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .works {
+        width: calc((100vw / 3) - 72px);
+        height: calc((100vw / 3) - 72px);
+    }
+}
+
+@media (max-width: 880px) {
+    #works {
+        grid-template-columns: 1fr 1fr;
+    }
+    .works {
+        width: calc((100vw / 2) - 75px);
+        height: calc((100vw / 2) - 75px);
+    }
+}
+
+@media (max-width: 600px) {
+    #works {
+        grid-template-columns: 1fr;
+    }
+    .works {
+        width: calc((100vw) - 85px);
+        height: calc((100vw) - 85px);
+    }
+}
+
+
+/* Google Pixel */
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    #works {
+        grid-template-columns: 1fr 1fr;
+    }
+    .works {
+        width: calc((100vw / 2) - 75px);
+        height: calc((100vw / 2) - 75px);
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {
+    #works {
+        grid-template-columns: 1fr 1fr;
+    }
+    .works {
+        width: calc((100vw / 2) - 75px);
+        height: calc((100vw / 2) - 75px);
+    }
+}
+
+
+/* iPhone */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    #works {
+        grid-template-columns: 1fr 1fr;
+    }
+    .works {
+        width: calc((100vw / 2) - 75px);
+        height: calc((100vw / 2) - 75px);
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    #works {
+        grid-template-columns: 1fr 1fr;
+    }
+    .works {
+        width: calc((100vw / 2) - 75px);
+        height: calc((100vw / 2) - 75px);
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    #works {
+        grid-template-columns: 1fr 1fr;
+    }
+    .works {
+        width: calc((100vw / 2) - 75px);
+        height: calc((100vw / 2) - 75px);
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    #works {
+        grid-template-columns: 1fr 1fr;
+    }
+    .works {
+        width: calc((100vw / 2) - 75px);
+        height: calc((100vw / 2) - 75px);
+    }
+}
+
+
+/* Galaxy */
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+    #works {
+        grid-template-columns: 1fr 1fr;
+    }
+    .works {
+        width: calc((100vw / 2) - 75px);
+        height: calc((100vw / 2) - 75px);
+    }
+}
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    #works {
+        grid-template-columns: 1fr 1fr;
+    }
+    .works {
+        width: calc((100vw / 2) - 75px);
+        height: calc((100vw / 2) - 75px);
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {
+    #works {
+        grid-template-columns: 1fr 1fr;
+    }
+    .works {
+        width: calc((100vw / 2) - 75px);
+        height: calc((100vw / 2) - 75px);
+    }
+}
+
+
+/* HTC */
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    #works {
+        grid-template-columns: 1fr 1fr;
+    }
+    .works {
+        width: calc((100vw / 2) - 75px);
+        height: calc((100vw / 2) - 75px);
+    }
+}
+
+
+/* Windows */
+
+@media screen and (device-width: 480px) and (device-height: 800px) and (orientation: portrait) {
+    #works {
+        grid-template-columns: 1fr 1fr;
+    }
+    .works {
+        width: calc((100vw / 2) - 75px);
+        height: calc((100vw / 2) - 75px);
+    }
+}
