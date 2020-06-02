@@ -12,7 +12,7 @@ white */
 
 /*
 *
-top sticky nav bar 
+top sticky nav bar
 *
 */
 
@@ -125,6 +125,12 @@ main content: tags nav
     color: white;
 }
 
+#tags-nav button:focus {
+    outline: none;
+    box-shadow: none;
+    border: 2px dashed;
+    border-color: white;
+}
 
 /*
 *
@@ -136,7 +142,7 @@ main content: works
 /* only use if tags float top */
 
 
-/* .main #works { 
+/* .main #works {
     margin-top: 115px;
 } */
 
