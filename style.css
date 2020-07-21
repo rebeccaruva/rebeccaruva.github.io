@@ -12,6 +12,18 @@ white */
 
 /*
 *
+svg potion
+*
+*/
+
+svg {
+    width: 480px;
+    height: 480px;
+}
+
+
+/*
+*
 top sticky nav bar
 *
 */
@@ -132,6 +144,7 @@ main content: tags nav
     border-color: white;
 }
 
+
 /*
 *
 main content: works
@@ -162,7 +175,7 @@ main content: works
     padding: 25px;
     width: calc((100vw / 4) - 70px);
     height: calc((100vw / 4) - 70px);
-    border: 3px dashed #6f2b85;
+    /* border: 3px dashed #6f2b85; */
     box-shadow: 0 0 0 4px white;
     animation: fadeIn ease 1.5s;
     -webkit-animation: fadeIn ease 1.5s;
@@ -419,7 +432,40 @@ bottom footer
 *
 */
 
-#float-bottom {}
+#float-bottom {
+    overflow: hidden;
+    background-color: #6f2b85;
+    position: fixed;
+    bottom: 0;
+    height: 75px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+#float-bottom p {
+    float: left;
+    display: block;
+    font-size: 24px;
+    padding-left: 12px;
+    padding-right: 40px;
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+}
+
+#float-bottom img {
+    float: left;
+    display: block;
+    padding-right: 12px;
+}
+
+#float-bottom #search {
+    padding-right: 24px;
+}
+
+#float-bottom #right {
+    float: right;
+}
 
 
 /*
