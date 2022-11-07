@@ -4,6 +4,7 @@
 //
 ////////
 
+//when tag is clicked, change which tag is active
 $('.tag').click(function() {
     $('.tag').each(function() {
         $(this).removeClass('active')
@@ -12,6 +13,7 @@ $('.tag').click(function() {
     $(this).addClass('active');
 });
 
+//when tag is selected, show and hide works as necessary
 function tagSelected(tag) {
     $('.works').each(function() {
         if ($(this).hasClass(tag)) {
@@ -22,13 +24,14 @@ function tagSelected(tag) {
     });
 }
 
+//copy email address when click (in case mailto: does not work)
 let emailLink = document.getElementById("email");
 
 emailLink.addEventListener('click', function(event) {
-    let mail = "bexbuilds.fun";
+    let mail = "bexbuildsfun@gmail.com";
     navigator.clipboard.writeText(mail);
-    alert(mail + " copied!");
-})
+    alert(mail + " copied to clipboard.");
+});
 
 ////////
 //

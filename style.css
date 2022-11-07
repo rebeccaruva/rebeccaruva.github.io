@@ -60,9 +60,11 @@ side bar
     height: 100%;
     width: 20%;
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     top: 0;
     left: 0;
-    padding-top: 40px;
     border-right: solid 5px #BD5A4F;
 }
 
@@ -70,10 +72,12 @@ side bar
     padding: 8px;
     font-size: 18px;
     display: block;
+    justify-content: stretch;
 }
 
 #top-sidebar {
     text-align: center;
+    padding-top: 25px;
 }
 
 #top-sidebar h3 {
@@ -92,8 +96,7 @@ side bar
 
 #language-options {
     text-align: center;
-    bottom: 25px;
-    /* position: inherit; */
+    padding-bottom: 25px;
 }
 
 #language-options p {
