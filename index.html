@@ -13,21 +13,38 @@
 
 <body>
     <div id="sidebar">
+        <div id="top-sidebar">
+            <img src="images/icons/logo.png" alt="Bex Logo">
+            <h3>Rebecca 'Bex' Ruvalcaba</h3>
+            <p>Interaction Designer</p>
+            <br>
+            <p>building <span class="highlight-red">fun</span> into <span class="highlight-red">fun</span>ctional</p>
+        </div>        
+        <br>
         <nav id="nav" role="navigation">
             <ul>
                 <li><a href="/" class="active"><img src="images/icons/portfolioblock.png" alt="portfolio link">Portfolio</a></li>
-                <li><a href="/EN/about.html"><img src="images/icons/aboutblock.png" alt="about link">About</a></li>
+                <li><a href="/about.html"><img src="images/icons/aboutblock.png" alt="about link">About</a></li>
                 <li><a href="#contact"><img src="images/icons/contactblock.png" alt="contact link">Contact</a></li>
             </ul>
         </nav>
+        <div id="language-options">
+            <button class="highlight-blue">EN</button>
+            <p>|</p>
+            <button href="/FR">FR</button>
+        </div>
     </div>
     <div id="main">
-        <div id="tags-nav">
-            <h3>Tags:</h3>
-            <button class="tag active" onclick="tagSelected('all')">All</button>
-            <button class="tag" onclick="tagSelected('games')">Games</button>
-            <button class="tag" onclick="tagSelected('toys')">Toys</button>
-            <button class="tag" onclick="tagSelected('research')">Research</button>
+        <div id="top-main">
+            <img src="images/icons/portfolioblock.png" alt="Potfolio icon">
+            <h1>PORTFOLIO</h1>
+            <div id="tags-nav">
+                <h3>Tags:</h3>
+                <button class="tag active" onclick="tagSelected('all')">All</button>
+                <button class="tag" onclick="tagSelected('games')">Games</button>
+                <button class="tag" onclick="tagSelected('toys')">Toys</button>
+                <button class="tag" onclick="tagSelected('research')">Research</button>
+            </div>
         </div>
         <div id="works">
             <div class="works toys all" id="ctc" onclick="workOpenClose('ctc')">
@@ -75,9 +92,16 @@
                 <h3>Zelda-inspired Ring Box and Rupees</h3>
             </div>
         </div>
-    </div>
-    <div id="contact">
-
+        <div id="contact">
+            <div id="socials">
+                <img src="images/icons/socials/linkedin.png" alt="LinkedIn link" href="www.linkedin.com/in/rebeccaruva">
+                <img src="images/icons/socials/mail.png" alt="E-mail address" href="mailto:bexbuildsfun@gmail.com">
+                <img src="images/icons/socials/twitter.png" alt="Twitter link" href="www.twitter.com/bexthehexx">
+                <img src="images/icons/socials/github.png" alt="GitHub link" href="www.github.com/rebeccaruva">
+            </div>
+            <p>Made with &lt;/&gt;, ❤, and fun!</p>
+            <p>© bexbuilds.fun 2022, Rebecca 'Bex' Ruvalcaba</p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

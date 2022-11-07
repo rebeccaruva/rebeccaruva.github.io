@@ -59,19 +59,45 @@ side bar
     top: 0;
     left: 0;
     padding-top: 40px;
-    background-color: yellow;
+    border-right: solid 5px #BD5A4F;
 }
 
 #sidebar nav {
     padding: 8px;
-    font-size: 24px;
+    font-size: 18px;
     display: block;
 }
 
-#main {
-    margin-left: 25%;
-    font-size: 12px;
+#top-sidebar {
+    text-align: center;
 }
+
+#top-sidebar h3 {
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+
+#top-sidebar p {
+    font-size: 16px;
+    margin: 0px;
+}
+
+#language-options {
+    text-align: center;
+    bottom: 25px;
+    /* position: inherit; */
+}
+
+#language-options p {
+    display: inline;
+}
+
+#language-options button {
+    display: inline;
+    border: none;
+    background-color: transparent;
+}
+
 
 
 /*
@@ -80,7 +106,7 @@ main content for every page
 *
 */
 
-body {
+html,body {
     background-color: white;
     margin: 0;
 }
@@ -90,6 +116,92 @@ p {
     font-size: 12px;
 }
 
+h1 {
+    font-family: 'Itim', cursive;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 25px;
+    font-family: 'Rubik', sans-serif;
+}
+
+#main {
+    margin-left: 25%;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.highlight-red {
+    color: #BD5A4F;
+}
+
+.highlight-blue {
+    color: #4A8AB5;
+}
+
+.highlight-green {
+    color: #429866;
+}
+
+/*
+*
+main content: top
+*
+*/
+
+#top-main {
+    background-color: #FADBD8;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#top-main img {
+    margin-top: 25px;
+    width: 100px;
+    height: auto;
+}
+
+#top-main h1 {
+    color:#BD5A4F;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#contact {
+    background-color: #429866;
+    text-align: center;
+    color: white;
+    padding: 25px;
+}
+
+#contact img{
+    width: 35px;
+    height: 35px;
+    margin: 0px 6px 0px 6px;
+    border: solid 1px transparent;
+    border-radius: 500px;
+    padding: 0;
+}
+
+#contact img:hover{
+    cursor: pointer;    
+    background-color: #BD5A4F;
+}
+
+#contact p {
+    font-size: 14px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
 
 /*
 *
@@ -101,7 +213,7 @@ main content: tags nav
     margin: 10px;
     padding: 5px;
     display: inline-block;
-    background-color: #FADBD8;
+    font-family: 'Rubik', sans-serif;
     /* width: 100%; */
     /* only use if tags float top */
     /* top: 50px; */
@@ -123,6 +235,7 @@ main content: tags nav
     margin: 10px;
     text-align: center;
     font-size: 12px;
+    color: #000;
     cursor: pointer;
     display: inline-block;
 }
@@ -131,6 +244,9 @@ main content: tags nav
 }
 
 #tags-nav button.active {
+    background-color: #EC7063;
+    color: #FFF;
+    background-clip: padding-box;
     border-image: url("/images/icons/tagselected.png") 30% stretch;
 }
 
@@ -157,8 +273,10 @@ main content: works
 } */
 
 #works {
+    font-family: 'Rubik', sans-serif;
+
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 6px;
     margin-left: 5px;
     margin-right: 5px;
@@ -231,8 +349,7 @@ main content: works
 
 .works h3 {
     margin: 0px;
-    color: white;
-    text-shadow: 2px 2px #6f2b85;
+    color: #BD5A4F;
     /* mix-blend-mode: difference; */
 }
 
@@ -272,34 +389,8 @@ main content: works
 }
 
 .works:hover p {
-    color: white;
-    text-shadow: 2px 2px #6f2b85;
+    color: #EC7063;
     display: block;
-}
-
-
-/*
-*
-header text
-*
-*/
-
-h1 {
-    font-family: 'Gaegu', cursive;
-    color: #6f2b85;
-    font-size: 48px;
-}
-
-h2 {
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 700;
-    font-size: 30px;
-}
-
-h3 {
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 600;
-    font-size: 25px;
 }
 
 
@@ -421,49 +512,6 @@ overlays
     padding: 10px 15px;
     cursor: pointer;
 }
-
-
-/*
-*
-bottom footer
-*
-*/
-
-#float-bottom {
-    overflow: hidden;
-    background-color: #6f2b85;
-    position: fixed;
-    bottom: 0;
-    height: 75px;
-    width: 100%;
-    vertical-align: middle;
-}
-
-#float-bottom p {
-    float: left;
-    display: block;
-    font-size: 24px;
-    padding-left: 12px;
-    padding-right: 40px;
-    text-align: center;
-    color: white;
-    border: 2px solid white;
-}
-
-#float-bottom img {
-    float: left;
-    display: block;
-    padding-right: 12px;
-}
-
-#float-bottom #search {
-    padding-right: 24px;
-}
-
-#float-bottom #right {
-    float: right;
-}
-
 
 /*
 *
