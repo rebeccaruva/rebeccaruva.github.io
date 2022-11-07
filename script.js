@@ -22,6 +22,14 @@ function tagSelected(tag) {
     });
 }
 
+let emailLink = document.getElementById("email");
+
+emailLink.addEventListener('click', function(event) {
+    let mail = "bexbuilds.fun";
+    navigator.clipboard.writeText(mail);
+    alert(mail + " copied!");
+})
+
 ////////
 //
 // below is for opening work popups

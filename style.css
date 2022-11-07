@@ -29,6 +29,9 @@ nav {
 nav li {
     list-style: none;
     padding: 5px;
+    margin: 5px 0px 5px 0px;
+    display: flex;
+    align-items:center;
 }
 
 nav li a {
@@ -44,6 +47,7 @@ nav img {
     height: 75px;
     width: 75px;
     padding-right: 5px;
+    vertical-align:middle;
 }
 
 /*
@@ -54,7 +58,7 @@ side bar
 
 #sidebar {
     height: 100%;
-    width: 25%;
+    width: 20%;
     position: fixed;
     top: 0;
     left: 0;
@@ -80,6 +84,10 @@ side bar
 #top-sidebar p {
     font-size: 16px;
     margin: 0px;
+}
+
+#top-sidebar img {
+    max-width: 80%;
 }
 
 #language-options {
@@ -135,7 +143,7 @@ h3 {
 }
 
 #main {
-    margin-left: 25%;
+    margin-left: 20%;
     font-size: 12px;
     margin-bottom: 0;
 }
@@ -359,27 +367,27 @@ main content: works
 }
 
 #ctc {
-    background-image: url("/images/cheddarthecat-thumb.png");
+    background-image: url("/images/thumbnails/cheddarthecat-thumb.png");
 }
 
 #oh {
-    background-image: url("/images/octo-thumb.jpg");
+    background-image: url("/images/thumbnails/octo-thumb.jpg");
 }
 
 #pc {
-    background-image: url("/images/clueless-thumb.jpg");
+    background-image: url("/images/thumbnails/clueless-thumb.jpg");
 }
 
 #jtf {
-    background-image: url("/images/judge-thumb.jpg");
+    background-image: url("/images/thumbnails/judge-thumb.jpg");
 }
 
 #tid {
-    background-image: url("/images/trauma-thumb.jpg");
+    background-image: url("/images/thumbnails/trauma-thumb.jpg");
 }
 
 #tracks {
-    background-image: url("/images/10tracks-thumb.png");
+    background-image: url("/images/thumbnails/10tracks-thumb.png");
 }
 
 .works {
