@@ -12,44 +12,46 @@
 </head>
 
 <body>
-    <nav role="navigation" class="mobile-nav top">
-        <a href="#home"><img src="images/icons/logo.png" alt="Bex Logo"></a>
-        <div id="mobile-links">
-            <a href="#portfolio">Portfolio</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <a href="javascript:void(0);" class="hamburger-icon" onclick="displayMobileNavLinks()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </a>
-    </nav>
-    <div id="sidebar">
-        <div id="top-sidebar">
-            <img src="images/icons/logo.png" alt="Bex Logo">
-            <h3>Rebecca 'Bex' Ruvalcaba</h3>
-            <p>Interaction Designer</p>
-            <br>
-            <p>building <span class="highlight-red">fun</span> into <span class="highlight-red">fun</span>ctional</p>
-        </div>        
-        <nav id="nav" role="navigation">
-            <ul>
-                <li><a href="/" class="active"><img src="images/icons/portfolioblock.png" alt="portfolio link">Portfolio</a></li>
-                <li><a href="/about.html"><img src="images/icons/aboutblock.png" alt="about link">About</a></li>
-                <li><a href="#contact"><img src="images/icons/contactblock.png" alt="contact link">Contact</a></li>
-            </ul>
+    <div id="body-container">
+        <nav role="navigation" class="mobile-nav top">
+            <a href="#home"><img src="images/icons/logo.png" alt="Bex Logo"></a>
+            <div id="mobile-links">
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="hamburger-icon" onclick="displayMobileNavLinks()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
         </nav>
-        <div id="language-options">
-            <button class="highlight-blue">EN</button>
-            <p>|</p>
-            <button href="/FR">FR</button>
+        <div id="sidebar">
+            <div id="top-sidebar">
+                <img src="images/icons/logo.png" alt="Bex Logo">
+                <h3>Rebecca 'Bex' Ruvalcaba</h3>
+                <p>Interaction Designer</p>
+                <br>
+                <p>building <span class="highlight-red">fun</span> into <span class="highlight-red">fun</span>ctional</p>
+            </div>        
+            <nav id="nav" role="navigation">
+                <ul>
+                    <li><a href="/" class="active"><img src="images/icons/portfolioblock.png" alt="portfolio link">Portfolio</a></li>
+                    <li><a href="/about.html"><img src="images/icons/aboutblock.png" alt="about link">About</a></li>
+                    <li><a href="#contact"><img src="images/icons/contactblock.png" alt="contact link">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="language-options">
+                <button class="highlight-blue">EN</button>
+                <p>|</p>
+                <button href="/FR">FR</button>
+            </div>
         </div>
-    </div>
-    <div id="main" class="top">
-        <div id="top-main">
-            <img src="images/icons/portfolioblock.png" alt="Potfolio icon">
-            <h1>PORTFOLIO</h1>
+        <div id="main" class="top">
+            <div id="top-main">
+                <img src="images/icons/portfolioblock.png" alt="Potfolio icon">
+                <h1>PORTFOLIO</h1>
+            </div>
             <div id="tags-nav">
                 <h3>Tags:</h3>
                 <button class="tag active" onclick="tagSelected('all')">All</button>
@@ -57,72 +59,73 @@
                 <button class="tag" onclick="tagSelected('toys')">Toys</button>
                 <button class="tag" onclick="tagSelected('research')">Research</button>
             </div>
-        </div>
-        <div id="works">
-            <div class="works toys all" id="oh" onclick="workOpenClose('oh')">
-                <h3>Octo-hugs</h3>
-                <p>a huggable plush toy</p>
+            <div id="works">
+                <div class="works toys all" id="oh" onclick="workOpenClose('oh')">
+                    <h3>Octo-hugs</h3>
+                    <p>a huggable plush toy</p>
+                </div>
+                <div class="works research all" id="clr">
+                    <h3>Controlling locomotion of robots</h3>
+                    <p>research paper and presentation</p>
+                </div>
+                <div class="works research all" id="pc">
+                    <h3>Project Clueless</h3>
+                    <p>a smart closet created at Google</p>
+                </div>
+                <div class="works toys all" id="ctc" onclick="workOpenClose('ctc')">
+                    <h3>Cheddar the Cat</h3>
+                    <p>a virtual pet chrome extension.</p>
+                </div>
+                <div class="works research all" id="fmw">
+                    <h3>File Management in Webstrates</h3>
+                    <p>research on managing files in a web-based collaborative platform</p>
+                </div>
+                <div class="works games all" id="jtf">
+                    <h3>Judge the Fly</h3>
+                    <p>an alternative game controller</p>
+                </div>
+                <div class="works games all" id="tid">
+                    <h3>Trauma in Drama</h3>
+                    <p>a visual novel with interactive mini games</p>
+                </div>
+                <div class="works games all" id="mb">
+                    <h3>Mosquito Bonito</h3>
+                    <p>a VR mobile game with Google Cardboard</p>
+                </div>
+                <div class="works games all" id="ch">
+                    <h3>Clearing House</h3>
+                    <p>a strategy turn-based board game</p>
+                </div>
+                <div class="works games all" id="bff">
+                    <h3>BFFs</h3>
+                    <p>a shoot-em up game about saving your friend</p>
+                </div>
+                <div class="works games all" id="cz">
+                    <h3>Camazotz</h3>
+                    <p>a platformer exploring the idea of playing as a mayan pictograph</p>
+                </div>
+                <div class="works games all" id="wm">
+                    <h3>Wolfman Mayhem</h3>
+                    <p>an assymetrical multiplayer game</p>
+                </div>
+                <div class="works toys all" id="zrb">
+                    <h3>Zelda-inspired Ring Box and Rupees</h3>
+                    <p>a set of one-of-a-kind collector toys</p>
+                </div>
             </div>
-            <div class="works research all" id="clr">
-                <h3>Controlling locomotion of robots</h3>
-                <p>research paper and presentation</p>
+            <div id="contact">
+                <div id="socials">
+                    <a href="https://www.linkedin.com/in/rebeccaruva/" target="_blank"><img src="images/icons/socials/linkedin.png" alt="LinkedIn link"></a>
+                    <a id="email" href="mailto:bexbuildsfun@gmail.com?subject=Hi,%20Bex!"><img src="images/icons/socials/mail.png" alt="E-mail address"></a>
+                    <a href="https://twitter.com/bexthehexx" target="_blank"><img src="images/icons/socials/twitter.png" alt="Twitter link"></a>
+                    <a href="https://www.github.com/rebeccaruva" target="_blank"><img src="images/icons/socials/github.png" alt="GitHub link"></a>
+                </div>
+                <p>Made with &lt;/&gt;, ❤, and fun!</p>
+                <p>© 2022 bexbuilds.fun | Rebecca 'Bex' Ruvalcaba</p>
             </div>
-            <div class="works research all" id="pc">
-                <h3>Project Clueless</h3>
-                <p>a smart closet created at Google</p>
-            </div>
-            <div class="works toys all" id="ctc" onclick="workOpenClose('ctc')">
-                <h3>Cheddar the Cat</h3>
-                <p>a virtual pet chrome extension.</p>
-            </div>
-            <div class="works research all" id="fmw">
-                <h3>File Management in Webstrates</h3>
-                <p>research on managing files in a web-based collaborative platform</p>
-            </div>
-            <div class="works games all" id="jtf">
-                <h3>Judge the Fly</h3>
-                <p>an alternative game controller</p>
-            </div>
-            <div class="works games all" id="tid">
-                <h3>Trauma in Drama</h3>
-                <p>a visual novel with interactive mini games</p>
-            </div>
-            <div class="works games all" id="mb">
-                <h3>Mosquito Bonito</h3>
-                <p>a VR mobile game with Google Cardboard</p>
-            </div>
-            <div class="works games all" id="ch">
-                <h3>Clearing House</h3>
-                <p>a strategy turn-based board game</p>
-            </div>
-            <div class="works games all" id="bff">
-                <h3>BFFs</h3>
-                <p>a shoot-em up game about saving your friend</p>
-            </div>
-            <div class="works games all" id="cz">
-                <h3>Camazotz</h3>
-                <p>a platformer exploring the idea of playing as a mayan pictograph</p>
-            </div>
-            <div class="works games all" id="wm">
-                <h3>Wolfman Mayhem</h3>
-                <p>an assymetrical multiplayer game</p>
-            </div>
-            <div class="works toys all" id="zrb">
-                <h3>Zelda-inspired Ring Box and Rupees</h3>
-                <p>a set of one-of-a-kind collector toys</p>
-            </div>
-        </div>
-        <div id="contact">
-            <div id="socials">
-                <a href="https://www.linkedin.com/in/rebeccaruva/" target="_blank"><img src="images/icons/socials/linkedin.png" alt="LinkedIn link"></a>
-                <a id="email" href="mailto:bexbuildsfun@gmail.com?subject=Hi,%20Bex!"><img src="images/icons/socials/mail.png" alt="E-mail address"></a>
-                <a href="https://twitter.com/bexthehexx" target="_blank"><img src="images/icons/socials/twitter.png" alt="Twitter link"></a>
-                <a href="https://www.github.com/rebeccaruva" target="_blank"><img src="images/icons/socials/github.png" alt="GitHub link"></a>
-            </div>
-            <p>Made with &lt;/&gt;, ❤, and fun!</p>
-            <p>© 2022 bexbuilds.fun | Rebecca 'Bex' Ruvalcaba</p>
         </div>
     </div>
+    <a href="#" id="scroll-top" name="Scroll to top"></a>
     <script src="script.js"></script>
 </body>
 

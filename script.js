@@ -48,27 +48,42 @@ let sidebar = document.getElementById("sidebar");
 let mobileNav = document.getElementsByClassName("mobile-nav")[0];
 let main = document.getElementById("main");
 let worksGrid = document.getElementById("works");
+let worksItems = document.getElementsByClassName("works");
   
 function showMobileDisplay() {    
     sidebar.style.display = "none";
     mobileNav.style.display = "block";
 
+    //redo grid
     main.style.marginLeft = "0";
     worksGrid.style.gridTemplateColumns = "repeat(auto-fit, minmax(35vw, 1fr))";
+
+    //flex wrap works
+    for(let i = 0; i < worksItems.length; i++) {
+        worksItems[i].style.flexWrap = "wrap";
+        worksItems[i].getElementsByTagName("p")[0].style.flexBasis = "100%";
+    }
 }
 
 function showDesktopDisplay() {    
     sidebar.style.display = "flex";
     mobileNav.style.display = "none";
 
+    //redo grid
     main.style.marginLeft = "20%";
     worksGrid.style.gridTemplateColumns = "repeat(auto-fit, minmax(25vw, 1fr))";
+
+    //flex nowrap works
+    for(let i = 0; i < worksItems.length; i++) {
+        worksItems[i].style.flexWrap = "nowrap";
+        worksItems[i].getElementsByTagName("p")[0].style.flexBasis = "auto";
+    }
 }
 
 //check for window resize to either show mobile nav or sidebar
 window.onresize = windowResizeCheck;
 document.addEventListener('DOMContentLoaded', (event) => {
-    windowResizeCheck()
+    windowResizeCheck();
 });
 
 function windowResizeCheck() {

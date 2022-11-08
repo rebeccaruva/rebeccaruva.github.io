@@ -18,7 +18,60 @@ white #FFF
 
 /*
 *
-mobile nav
+site styles
+*
+*/
+
+html,body {
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto 0px; 
+}
+
+p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+}
+
+h1 {
+    font-family: 'Itim', cursive;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 25px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.highlight-red {
+    color: #BD5A4F;
+}
+
+.highlight-blue {
+    color: #4A8AB5;
+}
+
+.highlight-green {
+    color: #429866;
+}
+
+/*
+*
+mobile nav - mobile view
 *
 */
 
@@ -28,6 +81,10 @@ mobile nav
     position: relative;
     display: none;
     font-family: 'Rubik', sans-serif;
+
+    position: sticky;
+    top: -0.5px;
+    z-index: 100;
 }
 
 .mobile-nav #mobile-links {
@@ -70,7 +127,7 @@ mobile nav
 
 /*
 *
-side bar
+side bar - desktop view
 *
 */
 
@@ -85,6 +142,9 @@ side bar
     left: 0;
     border-right: solid 5px #BD5A4F;
     background-color: #FFF;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 /*
@@ -94,19 +154,19 @@ sidebar : nav
 */
 
 #sidebar nav {
-    padding: 8px;
     font-size: 18px;
-    display: block;
-    justify-content: stretch;
     font-family: 'Rubik', sans-serif;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#sidebar nav ul {
+    padding: 0;
 }
 
 #sidebar nav li {
     list-style: none;
-    padding: 5px;
-    margin: 5px 0px 5px 0px;
-    display: flex;
-    align-items:center;
+    margin: 5vh 0px 5vh 0px;
 }
 
 #sidebar nav li a {
@@ -122,7 +182,7 @@ sidebar : nav
     height: 75px;
     width: 75px;
     padding-right: 5px;
-    vertical-align:middle;
+    vertical-align: middle;
 }
 
 /*
@@ -172,62 +232,21 @@ side bar : language options
 }
 
 
-
 /*
 *
 main content for every page
 *
 */
 
-html,body {
-    background-color: #FFF;
-    margin: 0;
-}
-
-p {
-    font-family: 'Rubik', sans-serif;
-    font-size: 12px;
-}
-
-h1 {
-    font-family: 'Itim', cursive;
-    font-weight: normal;
-    font-size: 40px;
-}
-
-h2 {
-    font-weight: normal;
-    font-size: 30px;
-    font-family: 'Rubik', sans-serif;
-}
-
-h3 {
-    font-weight: normal;
-    font-size: 25px;
-    font-family: 'Rubik', sans-serif;
-}
-
 #main {
     margin-left: 20%;
     font-size: 12px;
-    margin-bottom: 0;
-}
-
-.highlight-red {
-    color: #BD5A4F;
-}
-
-.highlight-blue {
-    color: #4A8AB5;
-}
-
-.highlight-green {
-    color: #429866;
+    padding: 0;
 }
 
 /*
 *
-main content: top
+main content : top header
 *
 */
 
@@ -244,53 +263,26 @@ main content: top
 
 #top-main h1 {
     color:#BD5A4F;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-#contact {
-    background-color: #429866;
-    text-align: center;
-    color: white;
-    padding: 25px;
-}
-
-#contact img{
-    width: 35px;
-    height: 35px;
-    margin: 0px 6px 0px 6px;
-    border: solid 1px transparent;
-    border-radius: 500px;
-    padding: 0;
-}
-
-#contact img:hover{
-    cursor: pointer;    
-    background-color: #BD5A4F;
-}
-
-#contact p {
-    font-size: 14px;
-    padding-bottom: 5px;
     margin-bottom: 0;
+    height: fit-content;
 }
 
 /*
 *
-main content: tags nav
+main content : tags nav
 *
 */
 
 #tags-nav {
-    margin: 10px;
-    padding: 5px;
-    display: inline-block;
     font-family: 'Rubik', sans-serif;
+    width:100%;
+    background-color: #FADBD8;
 }
 
 #tags-nav h3 {
     margin: 0;
     display: inline-block;
+    padding: 0px 10px 0px 10px;
 }
 
 #tags-nav button {
@@ -303,7 +295,6 @@ main content: tags nav
     font-size: 12px;
     color: #000;
     cursor: pointer;
-    display: inline-block;
 }
 
 #tags-nav button:hover {    
@@ -316,17 +307,10 @@ main content: tags nav
     border-image: url("/images/icons/tagselected.png") 30% stretch;
 }
 
-#tags-nav button:focus {
-    /* outline: none;
-    box-shadow: none;
-    border: 2px dashed;
-    border-color: white; */
-}
-
 
 /*
 *
-main content: works
+main content : works grid
 *
 */
 
@@ -348,6 +332,7 @@ main content: works
     padding: 25px;
     background: grey;
     display: flex;
+    flex-wrap: nowrap;
 
     animation: fadeIn ease 1.5s;
     -webkit-animation: fadeIn ease 1.5s;
@@ -369,7 +354,7 @@ main content: works
 }
 
 .works:hover {
-    cursor: pointer;
+    cursor: help;
 }
 
 .works h3 {
@@ -394,7 +379,7 @@ main content: works
 }
 
 
-/* fade in works */
+/* works animation */
 
 @keyframes fadeIn {
     0% {
@@ -441,6 +426,8 @@ main content: works
     }
 }
 
+/* works images */
+
 #ctc {
     background-image: url("/images/thumbnails/cheddarthecat-thumb.png");
 }
@@ -468,27 +455,21 @@ main content: works
 
 /*
 *
-overlays
+overlays for works
 *
 */
 
-.overlayBG {
+/* .overlayBG {
     position: fixed;
-    /* Sit on top of the page content */
     display: none;
-    /* Hidden by default */
     width: 100%;
-    /* Full width (cover the whole page) */
     height: 100%;
-    /* Full height (cover the whole page) */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Black background with opacity */
     z-index: 2;
-    /* Specify a stack order in case you're using a different order for other elements */
 }
 
 .overlay {
@@ -507,166 +488,67 @@ overlays
     float: right;
     padding: 10px 15px;
     cursor: pointer;
-}
+} */
 
 /*
 *
-desktop - detect change in screen sizes
+main content : scroll to top
 *
 */
 
+#scroll-top {
+    --offset: 50px; 
+
+  position: sticky;
+  bottom: 20px;      
+  margin-right:20px; 
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+  
+  width:45px;
+  aspect-ratio:1;
+  background:#4a8ab5;
+  border-radius:10px;
+}
+
+#scroll-top:before {
+    content:"";
+    position:absolute;
+    inset:30%;
+    transform:translateY(20%) rotate(-45deg);
+    border-top:5px solid #fff;
+    border-right:5px solid #fff;
+  }
+
 /*
-@media (max-width: 1100px) {
-    #works {
-        grid-template-columns: 1fr 1fr;
-    }
-    .works {
-        width: calc((100vw / 3) - 72px);
-        height: calc((100vw / 3) - 72px);
-    }
+*
+main content : contact
+*
+*/
+
+#contact {
+    background-color: #429866;
+    text-align: center;
+    color: white;
+    padding: 25px;
 }
 
-@media (max-width: 880px) {
-    #works {
-        grid-template-columns: 1fr;
-    }
-    .works {
-        width: calc((100vw / 2) - 75px);
-        height: calc((100vw / 2) - 75px);
-    }
+#contact img{
+    width: 35px;
+    height: 35px;
+    margin: 0px 6px 0px 6px;
+    border: solid 1px transparent;
+    border-radius: 500px;
+    padding: 0;
 }
 
-@media (max-width: 600px) {
-    #works {
-        grid-template-columns: 1fr;
-    }
-    .works {
-        width: calc((100vw) - 85px);
-        height: calc((100vw) - 85px);
-    }
+#contact img:hover{
+    cursor: pointer;    
+    background-color: #BD5A4F;
 }
 
-
-Google Pixel
-
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
-    #works {
-        grid-template-columns: 1fr 1fr;
-    }
-    .works {
-        width: calc((100vw / 2) - 75px);
-        height: calc((100vw / 2) - 75px);
-    }
+#contact p {
+    font-size: 14px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
 }
-
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {
-    #works {
-        grid-template-columns: 1fr 1fr;
-    }
-    .works {
-        width: calc((100vw / 2) - 75px);
-        height: calc((100vw / 2) - 75px);
-    }
-}
-
-
- iPhone 
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    #works {
-        grid-template-columns: 1fr 1fr;
-    }
-    .works {
-        width: calc((100vw / 2) - 75px);
-        height: calc((100vw / 2) - 75px);
-    }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    #works {
-        grid-template-columns: 1fr 1fr;
-    }
-    .works {
-        width: calc((100vw / 2) - 75px);
-        height: calc((100vw / 2) - 75px);
-    }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    #works {
-        grid-template-columns: 1fr 1fr;
-    }
-    .works {
-        width: calc((100vw / 2) - 75px);
-        height: calc((100vw / 2) - 75px);
-    }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-    #works {
-        grid-template-columns: 1fr 1fr;
-    }
-    .works {
-        width: calc((100vw / 2) - 75px);
-        height: calc((100vw / 2) - 75px);
-    }
-}
-
-
- Galaxy 
-
-@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
-    #works {
-        grid-template-columns: 1fr 1fr;
-    }
-    .works {
-        width: calc((100vw / 2) - 75px);
-        height: calc((100vw / 2) - 75px);
-    }
-}
-
-@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
-    #works {
-        grid-template-columns: 1fr 1fr;
-    }
-    .works {
-        width: calc((100vw / 2) - 75px);
-        height: calc((100vw / 2) - 75px);
-    }
-}
-
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {
-    #works {
-        grid-template-columns: 1fr 1fr;
-    }
-    .works {
-        width: calc((100vw / 2) - 75px);
-        height: calc((100vw / 2) - 75px);
-    }
-}
-
-
- HTC 
-
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
-    #works {
-        grid-template-columns: 1fr 1fr;
-    }
-    .works {
-        width: calc((100vw / 2) - 75px);
-        height: calc((100vw / 2) - 75px);
-    }
-}
-
-
- Windows 
-
-@media screen and (device-width: 480px) and (device-height: 800px) and (orientation: portrait) {
-    #works {
-        grid-template-columns: 1fr 1fr;
-    }
-    .works {
-        width: calc((100vw / 2) - 75px);
-        height: calc((100vw / 2) - 75px);
-    }
-} */
