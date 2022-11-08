@@ -33,6 +33,54 @@ emailLink.addEventListener('click', function(event) {
     alert(mail + " copied to clipboard.");
 });
 
+//mobile display
+function displayMobileNavLinks() {
+    let links = document.getElementById("mobile-links");
+    if (links.style.display === "block") {
+        links.style.display = "none";
+    } else {
+        links.style.display = "block";
+    }
+}
+
+//show/hide sidebar and mobile-nav
+let sidebar = document.getElementById("sidebar");
+let mobileNav = document.getElementsByClassName("mobile-nav")[0];
+let main = document.getElementById("main");
+let worksGrid = document.getElementById("works");
+  
+function showMobileDisplay() {    
+    sidebar.style.display = "none";
+    mobileNav.style.display = "block";
+
+    main.style.marginLeft = "0";
+    worksGrid.style.gridTemplateColumns = "repeat(auto-fit, minmax(35vw, 1fr))";
+}
+
+function showDesktopDisplay() {    
+    sidebar.style.display = "flex";
+    mobileNav.style.display = "none";
+
+    main.style.marginLeft = "20%";
+    worksGrid.style.gridTemplateColumns = "repeat(auto-fit, minmax(25vw, 1fr))";
+}
+
+//check for window resize to either show mobile nav or sidebar
+window.onresize = windowResizeCheck;
+document.addEventListener('DOMContentLoaded', (event) => {
+    windowResizeCheck()
+});
+
+function windowResizeCheck() {
+  if((window.innerWidth <= 800 ) || ( window.innerHeight <= 600 )) {
+    //show mobile display
+    showMobileDisplay();
+  } else {
+    showDesktopDisplay();
+  }
+}
+
+
 ////////
 //
 // below is for opening work popups
