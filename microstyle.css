@@ -1,0 +1,105 @@
+/* color scheme
+
+dark red #BD5A4F
+red #EC7063
+light red #FADBD8
+
+dark green #429866
+green #59D78E
+light green #D4EFDF
+
+dark blue #4A8AB5
+blue #5EAEE3
+light blue #D6EAF8
+
+black #000
+white #FFF
+*/
+
+/*
+*
+microsite styles
+*
+*/
+
+html,body {
+    background-color: #429866;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.contact {
+    background-color: #429866;
+    text-align: center;
+    color: white;
+    padding: 25px;
+    display: block;
+}
+
+.contact.fr {
+    display: none;
+}
+
+.contact div img{
+    width: 35px;
+    height: 35px;
+    margin: 0px 6px 0px 6px;
+    border: solid 1px transparent;
+    border-radius: 500px;
+    padding: 0;
+}
+
+.contact div img:hover{
+    cursor: pointer;    
+    background-color: #BD5A4F;
+}
+
+.contact p {
+    font-size: 14px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+
+#langs {
+    text-align: center;
+}
+
+#langs button {
+    display: inline-block;
+    width: fit-content;
+    margin: 20px;
+
+    background-color: #BD5A4F;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+}
+
+#langs button:hover {
+    background-color: #EC7063;
+}
+
+#langs button:focus {
+    background-color: #D4EFDF;
+    color: #000;
+}
+
+#langs p {
+    display: inline-block;
+    color: #FFF;
+}

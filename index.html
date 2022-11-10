@@ -2,155 +2,54 @@
 <html>
 
 <head>
-    <title>bexbuilds.fun / Bex's Portfolio</title>
+    <title>Bex Ruvalcaba - microsite</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Itim&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="microstyle.css" />
     <link rel="shortcut icon" href="/images/icons/favicon.png" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div id="body-container">
-        <div class="overlayBG">
-            <div class="overlay">
-                <div id="title">
-                    <h1 class="highlight-red">Project Title</h1>
-                    <img src="images/icons/copylink.png" width="36" height="36">
-                </div>
-                <div id="subtitle">
-                    <h2>Subtitle</h2>
-                    <h3>Tags: </h3>
-                </div>
-                <div class="center">
-                    <img src="images/works/octo.jpg" width="80%">
-                </div>
-                <div id="role">
-                    <h3>Role: ...</h3>
-                    <h3>Team members: ...</h3>
-                </div>
-                <h3>Skills: </h3>
-                <h3>Tools: </h3>
-                <p>description</p>
-                <h3>Featured at...</h3>
-            </div>
-        <!-- </div>
-        <nav role="navigation" class="mobile-nav top">
-            <a href="#home"><img src="images/icons/logo.png" alt="Bex Logo"></a>
-            <div id="mobile-links">
-                <a href="#portfolio">Portfolio</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <a href="javascript:void(0);" class="hamburger-icon" onclick="displayMobileNavLinks()">
-                <div></div>
-                <div></div>
-                <div></div>
-            </a>
-        </nav>
-        <div id="sidebar">
-            <div id="top-sidebar">
-                <img src="images/icons/logo.png" alt="Bex Logo">
-                <h3>Rebecca 'Bex' Ruvalcaba</h3>
-                <p>Interaction Designer</p>
-                <br>
-                <p>building <span class="highlight-red">fun</span> into <span class="highlight-red">fun</span>ctional</p>
-            </div>        
-            <nav id="nav" role="navigation">
-                <ul>
-                    <li><a href="/" class="active"><img src="images/icons/portfolioblock.png" alt="portfolio link">Portfolio</a></li>
-                    <li><a href="/about.html"><img src="images/icons/aboutblock.png" alt="about link">About</a></li>
-                    <li><a href="#contact"><img src="images/icons/contactblock.png" alt="contact link">Contact</a></li>
-                </ul>
-            </nav>
-            <div id="language-options">
-                <button class="highlight-blue">EN</button>
-                <p>|</p>
-                <button href="/FR">FR</button>
-            </div>
-        </div>
-        <div id="main" class="top">
-            <div id="top-main">
-                <img src="images/icons/portfolioblock.png" alt="Potfolio icon">
-                <h1>PORTFOLIO</h1>
-            </div>
-            <div id="tags-nav">
-                <h3>Tags:</h3>
-                <button class="tag active" onclick="tagSelected('all')">All</button>
-                <button class="tag" onclick="tagSelected('games')">Games</button>
-                <button class="tag" onclick="tagSelected('toys')">Toys</button>
-                <button class="tag" onclick="tagSelected('research')">Research</button>
-            </div>
-            <div id="works">
-                <div class="works toys all" id="oh" onclick="workOpenClose('oh')">
-                    <h3>Octo-hugs</h3>
-                    <p>a huggable plush toy</p>
-                </div>
-                <div class="works research all" id="clr">
-                    <h3>Controlling locomotion of robots</h3>
-                    <p>research paper and presentation</p>
-                </div>
-                <div class="works research all" id="pc">
-                    <h3>Project Clueless</h3>
-                    <p>a smart closet created at Google</p>
-                </div>
-                <div class="works toys all" id="ctc" onclick="workOpenClose('ctc')">
-                    <h3>Cheddar the Cat</h3>
-                    <p>a virtual pet chrome extension.</p>
-                </div>
-                <div class="works research all" id="fmw">
-                    <h3>File Management in Webstrates</h3>
-                    <p>research on managing files in a web-based collaborative platform</p>
-                </div>
-                <div class="works games all" id="jtf">
-                    <h3>Judge the Fly</h3>
-                    <p>an alternative game controller</p>
-                </div>
-                <div class="works games all" id="tid">
-                    <h3>Trauma in Drama</h3>
-                    <p>a visual novel with interactive mini games</p>
-                </div>
-                <div class="works games all" id="mb">
-                    <h3>Mosquito Bonito</h3>
-                    <p>a VR mobile game with Google Cardboard</p>
-                </div>
-                <div class="works games all" id="ch">
-                    <h3>Clearing House</h3>
-                    <p>a strategy turn-based board game</p>
-                </div>
-                <div class="works games all" id="bff">
-                    <h3>BFFs</h3>
-                    <p>a shoot-em up game about saving your friend</p>
-                </div>
-                <div class="works games all" id="cz">
-                    <h3>Camazotz</h3>
-                    <p>a platformer exploring the idea of playing as a mayan pictograph</p>
-                </div>
-                <div class="works games all" id="wm">
-                    <h3>Wolfman Mayhem</h3>
-                    <p>an assymetrical multiplayer game</p>
-                </div>
-                <div class="works toys all" id="zrb">
-                    <h3>Zelda-inspired Ring Box and Rupees</h3>
-                    <p>a set of one-of-a-kind collector toys</p>
-                </div>
-            </div>
-            <div id="contact">
-                <div id="socials">
-                    <a href="https://www.linkedin.com/in/rebeccaruva/" target="_blank"><img src="images/icons/socials/linkedin.png" alt="LinkedIn link"></a>
-                    <a id="email" href="mailto:bexbuildsfun@gmail.com?subject=Hi,%20Bex!"><img src="images/icons/socials/mail.png" alt="E-mail address"></a>
-                    <a href="https://twitter.com/bexthehexx" target="_blank"><img src="images/icons/socials/twitter.png" alt="Twitter link"></a>
-                    <a href="https://www.github.com/rebeccaruva" target="_blank"><img src="images/icons/socials/github.png" alt="GitHub link"></a>
-                </div>
-                <p>Made with &lt;/&gt;, ❤, and fun!</p>
-                <p>© 2022 bexbuilds.fun | Rebecca 'Bex' Ruvalcaba</p>
-            </div>
-        </div>
+<div class="contact en">
+    <h2>Hi, my name is Bex!</h2>
+    <img src="images/profilepic.png" width="25%" height="auto" alt="Bex surrounded by cats, her happy place." style="margin-bottom:20px;">
+    <div id="socials">
+        <a href="https://www.linkedin.com/in/rebeccaruva/" target="_blank"><img src="images/icons/socials/linkedin.png" alt="LinkedIn link"></a>
+        <a id="email" href="mailto:bexbuildsfun@gmail.com?subject=Hi,%20Bex!"><img src="images/icons/socials/mail.png" alt="E-mail address"></a>
+        <a href="https://twitter.com/bexthehexx" target="_blank"><img src="images/icons/socials/twitter.png" alt="Twitter link"></a>
+        <a href="https://www.github.com/rebeccaruva" target="_blank"><img src="images/icons/socials/github.png" alt="GitHub link"></a>
     </div>
-    <a href="#" id="scroll-top" name="Scroll to top"></a> -->
+    <p>© 2022 Rebecca 'Bex' Ruvalcaba</p>
+</div>
+<div class="contact fr">
+    <h2>Bonjour, je m'appelle Bex !</h2>
+    <img src="images/profilepic.png" width="25%" height="auto" alt="Bex joue avec des chats, son animal préféré." style="margin-bottom:20px;">
+    <div id="socials">
+        <a href="https://www.linkedin.com/in/rebeccaruva/?locale=fr_FR" target="_blank"><img src="images/icons/socials/linkedin.png" alt="LinkedIn link"></a>
+        <a id="email" href="mailto:bexbuildsfun@gmail.com?subject=Bonjour,%20Bex !"><img src="images/icons/socials/mail.png" alt="E-mail address"></a>
+        <a href="https://twitter.com/bexthehexx" target="_blank"><img src="images/icons/socials/twitter.png" alt="Twitter link"></a>
+        <a href="https://www.github.com/rebeccaruva" target="_blank"><img src="images/icons/socials/github.png" alt="GitHub link"></a>
     </div>
-    <script src="script.js"></script>
+    <p>© 2022 Rebecca 'Bex' Ruvalcaba</p>
+</div>
+<div id="langs"><button id="en" autofocus>EN</button><p>|</p><button id="fr">FR</button></div>
 </body>
 
+<script>
+    let enbut = document.getElementById("en");
+    let frbut = document.getElementById("fr");
+
+    enbut.addEventListener('click', function() {
+        document.getElementsByClassName("contact en")[0].style.display = "block";
+        document.getElementsByClassName("contact fr")[0].style.display = "none";
+    });
+
+    frbut.addEventListener('click', function() {
+        document.getElementsByClassName("contact en")[0].style.display = "none";
+        document.getElementsByClassName("contact fr")[0].style.display = "block";
+    });
+
+</script>
 </html>
