@@ -102,12 +102,52 @@
 //
 ////////
 
-let worksInfo={"works":[
-    {"title": "Octo Hugs", "subtitle": "A huggable plush toy", "keywords":["toy", "hardware", "IoT"], "role": "Lead Designer", "Team": null, "Skills":["Research", "Interaction Design", "User Research", "User Testing", "Prototyping", "UX/UI","Fabrication"], "Tools":["Embedded Controller (Arduino)", "C/C++", "Adobe Illustrator", "Figma"], "Timeline":"7 months", "Short Description": "Octo-hugs is a customizable, huggable plush toy created for children ages 5-8 years old with developmental disabilities to support them in times when they need a soothing hug, something soft to touch, or relaxing sounds to hear. When Octo-hugs is hugged the toy will play ocean sounds, light up, and vibrate lightly to soothe the child. The toy is accompanied by an online site for parents to customize Octo-hugs with their child.", "Featured at":[{"Place":"Instructables.com", "URL": "https://www.instructables.com/Octo-hugs-a-Huggable-Octopus-Plush-Toy/","Date":"December 2019"}, {"Place":"HINDSIGHT Exhibition", "URL":null, "Date": "May 2020"}, {"Place":"HINDSIGHT Publication", "URL":null, "Date": "May 2020"}]}
-    ]};
-
-    openOverlay("Octo Hugs");
+openOverlay("Octo Hugs");
 
 function openOverlay(title) {
-    console.log("open overlay! "+title);
+    for(let work of worksInfo){
+        if(work.title == title) {
+            //title
+            document.getElementById("work-title").innerHTML = work.title;
+            //keywords
+            for (let kw of work.keywords){
+                let keywordSpan = document.createElement("SPAN");
+                keywordSpan.innerHTML = kw;
+                document.getElementById("work-keywords").appendChild(keywordSpan); //work.keywords.join(", ");
+            }
+            //main image
+            document.getElementById("work-mainImage").src = work.mainImage;
+            //role
+            document.getElementById("work-role").innerHTML = work.role;
+            //team
+            if(work.team == null) {
+                document.getElementById("work-team").parentNode.style.display = "none";
+            } else {
+                document.getElementById("work-team").innerHTML = work.team.join("<br>");
+            }
+            //timeline
+            if(work.timeline == null) {
+                document.getElementById("work-timeline").parentNode.style.display = "none";
+            } else {
+                document.getElementById("work-timeline").innerHTML = work.timeline;
+            }
+            //skills
+            document.getElementById("work-skills").innerHTML = work.skills.join(", ");
+            //tools
+            document.getElementById("work-tools").innerHTML = work.tools.join(", ");
+            //short description
+            document.getElementById("work-shortDesc").innerHTML = work.shortDesc;
+            //featured
+            if(work.featured == null) {
+                document.getElementById("work-featured").style.display = "none";
+            } else {
+                // let featureSpan = document.createElement("SPAN");
+                // featureSpan.innerHTML = "Featured on"+work.featured.place;
+                // document.getElementById("work-featured").appendChild(featureSpan);
+                for(let f of work.featured) {
+                    console.log("Featured on "+f.Place);
+                }
+            }
+        }
+    }
 }

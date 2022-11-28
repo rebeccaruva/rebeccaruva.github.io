@@ -511,6 +511,17 @@ overlays for works
     justify-content: space-between;
 }
 
+.overlay #work-keywords span {
+    border: 10px solid transparent;
+    border-image: url("/images/icons/tagselected.png") 30% stretch;
+    background-color: #EC7063;
+    background-clip: padding-box;
+    margin: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #FFF;
+}
+
 .overlay .center {
     text-align: center;
 }
