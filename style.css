@@ -33,6 +33,7 @@ body {
     display: grid;
     grid-template-columns: auto 0px; 
     overflow-y: scroll;
+    min-height: 100vh;
 }
 
 #body {
