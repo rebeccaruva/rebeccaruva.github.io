@@ -161,11 +161,13 @@ function openOverlay(title) {
 
                 let leftArrow = document.createElement('button');
                 leftArrow.innerText = "<";
+                leftArrow.id = "leftArrow";
                 leftArrow.addEventListener('click', function(e) {
                     plusDivs(-1);
                 });
                 let rightArrow = document.createElement('button');
                 rightArrow.innerText = ">";
+                rightArrow.id = "rightArrow";
                 rightArrow.addEventListener('click', function(e) {
                     plusDivs(1);
                 });

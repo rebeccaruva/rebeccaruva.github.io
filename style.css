@@ -304,7 +304,8 @@ main content : tags nav
     cursor: pointer;
 }
 
-#tags-nav button:hover {    
+#tags-nav button:hover { 
+    color: #EC7063;   
 }
 
 #tags-nav button.active {
