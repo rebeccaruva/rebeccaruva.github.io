@@ -251,6 +251,10 @@ main content for every page
     padding: 0;
 }
 
+button{
+    font-family: 'Rubik', sans-serif;
+}
+
 /*
 *
 main content : top header
@@ -385,6 +389,104 @@ main content : works grid
 
 .works:hover p {
     visibility: visible;
+}
+
+/* about main content
+
+dark blue #4A8AB5
+blue #5EAEE3
+light blue #D6EAF8
+*/
+
+#about-main {
+    background-color: #D6EAF8;
+    text-align: center;
+}
+
+#about-main img {
+    margin-top: 25px;
+    width: 100px;
+    height: auto;
+}
+
+#about-main h1 {
+    color:#4A8AB5;
+    margin-bottom: 0;
+    height: fit-content;
+}
+
+#about {
+    /* align-items: center; */
+    display: flex;
+    justify-content:space-between;
+    padding: 25px;
+}
+
+#about img {
+    width: 75%;
+    height: fit-content;
+    
+    animation: fadeIn ease 1.5s;
+    -webkit-animation: fadeIn ease 1.5s;
+    -moz-animation: fadeIn ease 1.5s;
+    -o-animation: fadeIn ease 1.5s;
+    -ms-animation: fadeIn ease 1.5s;
+}
+
+#about p {
+    font-size: 16px; 
+    text-align: center; 
+    padding-left: 25px;
+}
+
+#about .about-left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+}
+
+#about .about-left button {
+    background-color: #BD5A4F;
+    border-radius: 10px;
+    border-color: transparent;
+    color: #FFF;
+    float: right;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+
+    margin-top: 25px;
+}
+
+#about p {
+    font-size: 16px; 
+    text-align: center; 
+    padding-left: 25px;
+}
+#about h3 {
+    text-align: center; 
+}
+
+#about #games-grid {
+    display: flex;
+    flex-direction: row;
+}
+
+#about #games-grid .current-games {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#about #games-grid .current-games img{
+    width: 15vw;
+}
+
+#about #games-grid .current-games p{
+    text-align: center;
 }
 
 
