@@ -27,12 +27,16 @@ html,body {
     background-color: #FFF;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 }
 
 body {
     display: grid;
     grid-template-columns: auto 0px; 
+    overflow-y: scroll;
+}
+
+#body {
+    pointer-events: all;
 }
 
 p {
@@ -159,6 +163,7 @@ sidebar : nav
     font-family: 'Rubik', sans-serif;
     display: table-cell;
     vertical-align: middle;
+    margin-left: 2vw;
 }
 
 #sidebar nav ul {
@@ -220,6 +225,7 @@ side bar : language options
 #language-options {
     text-align: center;
     padding-bottom: 25px;
+    visibility: hidden;
 }
 
 #language-options p {
@@ -293,7 +299,7 @@ main content : tags nav
     background-clip: padding-box;
     margin: 10px;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     color: #000;
     cursor: pointer;
 }
@@ -434,6 +440,38 @@ main content : works grid
     background-image: url("/images/thumbnails/cheddarthecat-thumb.png");
 }
 
+#zrb {
+    background-image: url("/images/thumbnails/zeldaringbox-thumb.jpg");
+}
+
+#cz {
+    background-image: url("/images/thumbnails/camazotz-thumb.png");
+}
+
+#wm {
+    background-image: url("/images/thumbnails/wolfman-thumb.png");
+}
+
+#bff {
+    background-image: url("/images/thumbnails/bffs-thumb.png");
+}
+
+#ch {
+    background-image: url("/images/thumbnails/clearinghouse-thumb.jpg");
+}
+
+#mb {
+    background-image: url("/images/thumbnails/mosquito-thumb.png");
+}
+
+#fmw {
+    background-image: url("/images/thumbnails/webstrates-thumb.jpg");
+}
+
+#clr {
+    background-image: url("/images/thumbnails/robot-thumb.jpg");
+}
+
 #oh {
     background-image: url("/images/thumbnails/octo-thumb.jpg");
 }
@@ -461,15 +499,16 @@ overlays for works
 *
 */
 
-.overlayBG {
+div#overlayBG {
     position: fixed;
-    /* display: none; */
+    display: none;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    overflow-y: scroll;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 200;
 }
@@ -482,48 +521,146 @@ overlays for works
     padding: 0px 25px 25px 25px;
     width: 80vw;
     height: 85vh;
-    margin-top: 10vh;
+    margin-top: 5vh;
     overflow-y: scroll;
 }
 
 .overlay button {
-    background-color: black;
-    color: white;
+    background-color: transparent;
+    border-radius: 10px;
+    border-color: transparent;
+    color: #000;
     float: right;
     padding: 10px 15px;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.overlay button:hover {
+    background-color: #FADBD8;
+}
+
+.overlay #overlay-body {
+    width: 55vw;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    z-index: 225;
+}
+
+.overlay #work-top {
+    background-color: #FFF;
+    padding-top:25px;
+    position:sticky;
+    top: 0;
+    z-index: 250;
+}
+
+.overlay #work-top #work-title {
+    margin: 0;
+    padding-bottom: 10px;
+    /* font-size: 18px; */
+}
+
+.overlay #work-top #work-subtitle {
+    margin: 0;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-style: italic;
+    font-size: 18px;
 }
 
 .overlay #title {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: #FFF;
-    padding-top:25px;
-    
-    position:sticky;
-    top:0;
+    justify-content:space-between;
+}
+
+.overlay #title #flex-right {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.overlay #title #flex-right img {
+    margin-right: 25px;
+    align-self: flex-end;
+}
+
+.overlay #title #flex-right button {
+    align-self: flex-start;
 }
 
 .overlay #role {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
-.overlay #work-keywords span {
+.overlay #work-subtitle {
+    display: block;
+}
+
+.overlay #work-tags {
+    padding: 10px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.overlay #work-tags span {
     border: 10px solid transparent;
     border-image: url("/images/icons/tagselected.png") 30% stretch;
     background-color: #EC7063;
     background-clip: padding-box;
     margin: 10px;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     color: #FFF;
+}
+
+.overlay #work-slideshow img {
+    height: 35vw;
+    display:none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overlay #work-slideshow button {
+    background-color: #FADBD8;
+    color: #BD5A4F;
+    float: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+.overlay #work-slideshow {
+    text-align: center;
+}
+
+.overlay #work-featured span{
+    display: block;
+    padding-bottom: 10px;
 }
 
 .overlay .center {
     text-align: center;
+}
+
+.overlay h3 span.work-h3 {
+    text-decoration: underline;
+    font-size: 18px;
+    color: #BD5A4F;
+}
+
+.overlay h3 {
+    font-size: 16px;
+    color: #000;
+}
+
+.overlay p { 
+    font-size: 16px;
+    padding: 10px;
+    background-color: #FADBD8;
 }
 
 /*
