@@ -146,11 +146,18 @@ side bar - desktop view
     justify-content: space-between;
     top: 0;
     left: 0;
-    border-right: solid 5px #BD5A4F;
     background-color: #FFF;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+}
+
+#sidebar.portfolio-sidebar {
+    border-right: solid 5px #BD5A4F;
+}
+
+#sidebar.about-sidebar {
+    border-right: solid 5px #4A8AB5;
 }
 
 /*
