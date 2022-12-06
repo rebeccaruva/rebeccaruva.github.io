@@ -3,7 +3,7 @@ let worksInfo = [
         "title": "Octo hugs", 
         "keywords":["toy", "hardware", "research"], 
         "mainImage":"images/works/octo.jpg",
-        "images":["images/works/octo-legs-rui.jpg", "images/works/octo.jpg", "images/works/octo-ash.jpg", "images/works/octo-prototype.png", "images/works/octo-maddy.jpg"],
+        "images":["images/works/octo-legs-rui.jpg", "images/works/octo.jpg", "images/works/octo-ash.jpg", "images/works/octo-toy1.jpg", "images/works/octo-toy2.jpg", "images/works/octo-prototype.png", "images/works/octo-maddy.jpg"],
         "subtitle": "a huggable plush toy", 
         "role": "Lead Designer", 
         "team": null, 
