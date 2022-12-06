@@ -173,7 +173,7 @@ let worksInfo = [
         "mainImage":"images/works/zeldaringbox.jpg",
         "images":["images/works/zelda-top.jpg", "images/works/zelda-open.jpg", "images/works/zelda-rupees.jpg", "images/works/zelda-rupeeshappy.jpg", "images/works/zeldaringbox.jpg"],
         "subtitle": "a set of one-of-a-kind collector toys", 
-        "role": "Designer", 
+        "role": "Designer, Fabricator", 
         "team": ["Rebecca Ruvalcaba", "Mickael Bouhier"], 
         "skills":["3D Modeling", "Prototyping"],
         "tools":["AutoCAD", "Fabrication"],
