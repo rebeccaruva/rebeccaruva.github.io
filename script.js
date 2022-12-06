@@ -26,7 +26,7 @@ function showMobileDisplay() {
     sidebar.style.display = "none";
     mobileNav.style.display = "block";
 
-    //redo grid
+    //redo main
     main.style.marginLeft = "0";
 }
 
