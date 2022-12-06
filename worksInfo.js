@@ -11,7 +11,7 @@ let worksInfo = [
         "tools":["Embedded Controller (Arduino)", "C/C++", "Adobe Illustrator", "Figma", "Fabrication"],
         "timeline": "7 months", 
         "shortDesc": "Octo hugs is a customizable, huggable plush toy created for children ages 5-8 years old with developmental disabilities to support them in times when they need a soothing hug, something soft to touch, or relaxing sounds to hear. When Octo hugs is hugged the toy will play ocean sounds, light up, and vibrate lightly to soothe the child. The toy is accompanied by an online site for parents to customize Octo hugs with their child.", 
-        "featured":[{"place":"Instructables.com", "URL": "https://www.instructables.com/Octo-hugs-a-Huggable-Octopus-Plush-Toy/","date":"December 2019"}, {"place":"HINDSIGHT Exhibition", "URL":null, "date": "May 2020"}, {"place":"HINDSIGHT Publication", "URL":null, "date": "May 2020"}]
+        "featured":[{"place":"Instructables.com", "URL": "https://www.instructables.com/Octo-hugs-a-Huggable-Octopus-Plush-Toy/","date":"December 2019"}, {"place":"HINDSIGHT Exhibition", "URL":"https://parsons.edu/dt-2020/octo-hugs-a-huggable-plush-toy/", "date": "May 2020"}, {"place":"HINDSIGHT Publication", "URL":"https://parsons.edu/dt-2020/publication/entry/octo-hugs-a-fun-analysis-of-what-ive-learned-from-kids/", "date": "May 2020"}]
     },
     {
         "title": "Project Clueless", 
