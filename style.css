@@ -605,6 +605,18 @@ light blue #D6EAF8
     background-image: url("/images/thumbnails/octo-thumb.jpg");
 }
 
+#dx {
+    background-image: url("/images/thumbnails/dexter-thumb.jpg");
+}
+
+#fi {
+    background-image: url("/images/thumbnails/foodie-thumb.jpg");
+}
+
+#ip {
+    background-image: url("/images/thumbnails/inputphys-thumb.jpg");
+}
+
 #pc {
     background-image: url("/images/thumbnails/clueless-thumb.jpg");
 }

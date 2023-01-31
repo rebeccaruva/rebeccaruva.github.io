@@ -155,7 +155,7 @@ let worksInfo = [
     },
     {
         "title": "Wolfman Mayhem", 
-        "keywords":["game", "PC", "multiplayer"], 
+        "keywords":["game", "PC"], 
         "mainImage":"images/works/wolfman.png",
         "images":null,
         "subtitle": "an asymmetrical multiplayer game", 
@@ -180,34 +180,47 @@ let worksInfo = [
         "timeline": "4 days", 
         "shortDesc": "This zelda-inspired ring nox and rupees set was created for my proposal to my fiancée - the ultimate zelda fan. The ring box and rupees were 3D printed and painted. Mickael Bouhier aided with the 3D modeling process.", 
         "featured":null
+    },
+    {
+        "title": "Foodie Island",
+        "keywords":["game", "AR", "tabletop"], 
+        "mainImage":"images/works/FoodieIsland.jpg",
+        "images": ["images/works/FoodieIsland_3.jpg", "images/works/FoodieIsland_4.jpg", "images/works/FoodieIsland_2.jpg", "images/works/FoodieIsland.jpg"],
+        "subtitle": "a knowledge sharing co-op hybrid board game", 
+        "role": "Game Designer, Fabricator", 
+        "team": ["Rebecca Ruvalcaba", "Andrei Ostonon", "Alegria Haro"], 
+        "skills":["Prototyping", "User Testing", "UX/UI", "Documentation", "Game Design"],
+        "tools":["Figma", "Unity", "Fabrication"],
+        "timeline": "1 week", 
+        "shortDesc": "Foodie Island is a knowledge sharing gastronomic co-op turn-based hybrid board game using a novel AR translation mechanic. An AR view of events is integrated into the physical gameplay to aid players in translating resource cards and in creating meals from recipes. The AR interaction occurs when cards are placed on the interaction area of the board, which is outlined on the board by a yellow box. The game can be played with either one or multiple phones with the downloaded Foodie Island app.",
+        "featured":null
+    },
+    {
+        "title": "Dexter's Round Up",
+        "keywords":["game", "tabletop"], 
+        "mainImage":"images/works/dexter_1.jpg",
+        "images": ["images/works/dexter_1.jpg", "images/works/dexter_2.jpg", "images/works/dexter_3.jpg", "images/works/dexter_4.jpg", "images/works/dexter_5.jpg", "images/works/dexter_6.jpg"],
+        "subtitle": "a serious hybrid board game", 
+        "role": "Game Designer", 
+        "team": ["Rebecca Ruvalcaba", "Neila Rostom"], 
+        "skills":["User Research", "Study Design", "UX/UI", "Documentation", "Game Design"],
+        "tools":["Figma"],
+        "timeline": "2 weeks", 
+        "shortDesc": "Dexter's Round Up is a serious hybrid board game to improve dexterity in elders. Designed to be played on a multi-touch tabletop with tangible tokens in the shape of farm animals. The goal of the game is to be the fastest player to help dexter round up their animals. Through consistent gameplay we hope this game can be used to support dexterity in elders.",
+        "featured":null
+    },
+    {
+        "title": "Input Physicalization", 
+        "keywords":["research", "data visualization"], 
+        "mainImage":"images/works/inputphys_1.jpg",
+        "images":["images/works/inputphys_2.jpg", "images/works/inputphys_3.jpg", "images/works/inputphys_4.jpg", "images/works/inputphys_1.jpg"],
+        "subtitle": "research on input data physicalization", 
+        "role": "Lead Researcher", 
+        "team": ["Rebecca Ruvalcaba", "Nathalie Bressa, PhD", "Samuel Huron, PhD"], 
+        "skills":["Research", "Prototyping", "Documentation", "User Testing"],
+        "tools":["InDesign", "Fabrication"],
+        "timeline": "In progress", 
+        "shortDesc": "Input Physicalization is the intersection between input data visualization and data physicalization. No one has specifically explored systematically the design patterns and techniques of input physicalization, which can be useful for gathering data in an engaging way from the public and allows the public to learn from data through tangible interaction.", 
+        "featured":null
     }
     ];
-
-    // {
-    //     "title": "Input Physicalization", 
-    //     "keywords":["research", "data visualization"], 
-    //     "mainImage":"images/works/input.jpg",
-    //     "images":null,
-    //     "subtitle": "research on input data physicalization", 
-    //     "role": "Lead Researcher", 
-    //     "team": ["Rebecca Ruvalcaba", "Nathalie Bressa, PhD", "Samuel Huron, PhD"], 
-    //     "skills":["Research", "Prototyping", "Documentation", "User Testing"],
-    //     "tools":["InDesign", "Fabrication"],
-    //     "timeline": "In progress", 
-    //     "shortDesc": "Input Physicalization is the intersection between input data visualization and data physicalization. No one has specifically explored systematically the design patterns and techniques of input physicalization, which can be useful for gathering data in an engaging way from the public.", 
-    //     "featured":null
-    // },
-    // {
-    //     "title": "Farmer Round Up", 
-    //     "keywords":["toy", "research", "tangible tokens"], 
-    //     "mainImage":"images/works/farmer.jpg",
-    //     "images":null,
-    //     "subtitle": "a hybrid board game to improve dexterity in elders", 
-    //     "role": "Lead Designer", 
-    //     "team": ["Rebecca Ruvalcaba","Neila Rostom"], 
-    //     "skills":["Interaction Design", "Research", "Prototyping"],
-    //     "tools":["Unity", "C#", "Adobe Illustrator", "Fabrication"],
-    //     "timeline": "In progress", 
-    //     "shortDesc": "", 
-    //     "featured":null
-    // },
