@@ -212,8 +212,8 @@ let worksInfo = [
     {
         "title": "Input Physicalization", 
         "keywords":["research", "data visualization"], 
-        "mainImage":"images/works/inputphys_1.jpg",
-        "images":["images/works/inputphys_2.jpg", "images/works/inputphys_3.jpg", "images/works/inputphys_4.jpg", "images/works/inputphys_1.jpg"],
+        "mainImage":"images/works/inputphys_1.JPG",
+        "images":["images/works/inputphys_2.jpg", "images/works/inputphys_3.jpg", "images/works/inputphys_4.jpg", "images/works/inputphys_1.JPG"],
         "subtitle": "research on input data physicalization", 
         "role": "Lead Researcher", 
         "team": ["Rebecca Ruvalcaba", "Nathalie Bressa, PhD", "Samuel Huron, PhD"], 
